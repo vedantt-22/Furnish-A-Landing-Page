@@ -1,0 +1,152 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #c5c1c1;
+    color: #5f5d5d;
+}
+.box{
+    padding-left: 20px;
+    padding: 20px;
+    width: 70%;
+    background-color: #fff;
+    margin: auto;
+    position: relative;
+    margin-left: 230px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+
+
+.contact-header h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.info-block h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.info-block p {
+    font-size: 15px;
+    color: #777;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #e07b00;
+}
+
+.contact-form form {
+    width: 100%;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+
+textarea {
+    resize: none;
+    margin-bottom: 20px;
+}
+
+/* Button */
+button {
+    background-color: #e07b00;
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(224, 123, 0, 0.3);
+}
+
+button:hover {
+    background-color: #c96c00;
+}
+
+.social-section {
+    margin-top: 60px;
+}
+
+.social-section h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e07b00;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 992px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        padding: 40px 30px;
+        margin: auto;
+    }
+}
+
+
